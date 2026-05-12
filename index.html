@@ -1,0 +1,626 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="description" content="IMPRIMO — Agence d'impression, enseignes, façades et textile à Sidi Aïch, Béjaïa. Votre vision. Matérialisée." />
+<meta name="theme-color" content="#0A0A0F" />
+<title>IMPRIMO — Impression · Enseignes · Façades · Textile · Sidi Aïch, Béjaïa</title>
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=DM+Sans:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<!-- Phosphor Icons (CSS for each weight used) -->
+<link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css">
+<link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/duotone/style.css">
+<link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/fill/style.css">
+
+<!-- Swiper -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+<!-- GLightbox -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- =============================================================
+     01 — NAVBAR
+============================================================= -->
+<header class="nav" id="nav" data-screen-label="01 Nav">
+  <a href="#top" class="nav__logo" aria-label="IMPRIMO accueil">
+    IMPRIMO<span class="nav__dot" aria-hidden="true"></span>
+  </a>
+
+  <nav class="nav__links" aria-label="Navigation principale">
+    <a href="#services">Services</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#processus">Processus</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div class="nav__right">
+    <a href="#contact" class="btn btn--accent btn--sm">Devis Gratuit</a>
+    <button class="nav__burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- Mobile fullscreen menu -->
+<div class="mobilemenu" id="mobilemenu" aria-hidden="true">
+  <div class="mobilemenu__inner">
+    <a href="#services">Services</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#processus">Processus</a>
+    <a href="#contact">Contact</a>
+    <a href="#contact" class="btn btn--accent">Devis Gratuit</a>
+  </div>
+</div>
+
+<main id="top">
+
+<!-- =============================================================
+     02 — HERO
+============================================================= -->
+<section class="hero" data-screen-label="02 Hero">
+  <!-- animated gradient mesh (CSS only; 3D mesh placeholder) -->
+  <!-- TODO: 3D — replace .hero__mesh with Three.js particle mesh, transform-style: preserve-3d -->
+  <div class="hero__mesh" aria-hidden="true">
+    <span class="blob blob--1"></span>
+    <span class="blob blob--2"></span>
+    <span class="blob blob--3"></span>
+    <div class="grid-overlay"></div>
+  </div>
+
+  <div class="hero__eyebrow">
+    <span class="dot"></span>
+    <span class="mono">SIDI AÏCH · BÉJAÏA — EST. 2020</span>
+  </div>
+
+  <h1 class="hero__title" aria-label="IMPRIMO. Votre vision. Matérialisée.">
+    <span class="line"><span class="reveal">IMPRIMO<i class="punct">.</i></span></span>
+    <span class="line"><span class="reveal">Votre vision.</span></span>
+    <span class="line"><span class="reveal">Matérialisée<i class="punct accent">.</i></span></span>
+  </h1>
+
+  <p class="hero__sub">
+    Impression <span class="sep">·</span> Enseignes <span class="sep">·</span> Façades <span class="sep">·</span> Textile.
+    <br/>Une agence de production premium, du fichier à la pose.
+  </p>
+
+  <div class="hero__ctas">
+    <a href="#portfolio" class="btn btn--ghost">
+      <span>Voir nos Réalisations</span>
+      <i class="ph ph-arrow-up-right"></i>
+    </a>
+    <a href="#contact" class="btn btn--accent">
+      <span>Demander un Devis</span>
+      <i class="ph ph-arrow-right"></i>
+    </a>
+  </div>
+
+  <div class="hero__meta">
+    <div><span class="mono num">01</span><span class="lbl">Studio créatif</span></div>
+    <div><span class="mono num">02</span><span class="lbl">Atelier production</span></div>
+    <div><span class="mono num">03</span><span class="lbl">Pose &amp; installation</span></div>
+  </div>
+
+  <a href="#about" class="hero__scroll" aria-label="Défiler">
+    <span class="mono">SCROLL</span>
+    <i class="ph ph-caret-down"></i>
+  </a>
+</section>
+
+<!-- =============================================================
+     03 — ABOUT
+============================================================= -->
+<section class="about" id="about" data-screen-label="03 About">
+  <div class="about__left">
+    <div class="section-eyebrow"><span class="mono">/ 01 — À PROPOS</span></div>
+    <h2 class="h2">
+      Une équipe.<br/>
+      Un atelier.<br/>
+      <span class="accent">Mille supports.</span>
+    </h2>
+    <p class="lead">
+      Depuis plus de six ans, IMPRIMO accompagne marques, commerces et institutions
+      à Sidi Aïch, Béjaïa et à travers l'Algérie. Nous concevons, imprimons, fabriquons et installons —
+      du flyer au caisson lumineux, du t-shirt au revêtement de façade.
+    </p>
+    <p class="muted">
+      Notre obsession : la qualité du rendu final. Encres, supports, finitions, pose —
+      chaque détail est pensé pour que votre identité visuelle existe physiquement,
+      exactement comme vous l'avez imaginée.
+    </p>
+
+    <div class="stats">
+      <div class="stat"><div class="stat__num" data-count="100" data-suffix="+">0</div><div class="stat__lbl">Projets livrés</div></div>
+      <div class="stat"><div class="stat__num" data-count="6" data-suffix="+">0</div><div class="stat__lbl">Années d'expérience</div></div>
+      <div class="stat"><div class="stat__num" data-count="100" data-suffix="%">0</div><div class="stat__lbl">Clients satisfaits</div></div>
+      <div class="stat"><div class="stat__num" data-count="24" data-suffix="h">0</div><div class="stat__lbl">Délai devis</div></div>
+    </div>
+  </div>
+
+  <div class="about__right">
+    <div class="collage">
+      <figure class="c c--1"><img src="Images/grandimpression.jpg" alt="Atelier d'impression grand format"></figure>
+      <figure class="c c--2"><img src="Images/panneaulimuneuxbounehar.jpg" alt="Enseigne lumineuse posée"></figure>
+      <figure class="c c--3"><img src="Images/tshirtbounehar.jpg" alt="Flocage textile"></figure>
+      <figure class="c c--4"><img src="Images/opticien.jpg" alt="Façade Alucobond"></figure>
+      <div class="c c--badge">
+        <span class="mono">DEPUIS</span>
+        <strong>2020</strong>
+        <span class="mono">BÉJAÏA · DZ</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =============================================================
+     04 — SERVICES
+============================================================= -->
+<section class="services" id="services" data-screen-label="04 Services">
+  <div class="section-head">
+    <div class="section-eyebrow"><span class="mono">/ 02 — SERVICES</span></div>
+    <h2 class="h2">Dix savoir-faire.<br/><span class="muted-inline">Un seul interlocuteur.</span></h2>
+    <p class="section-sub">
+      De la carte de visite au caissons lumineux 4 mètres — toute la chaîne est faite en interne.
+    </p>
+  </div>
+
+  <div class="srv-grid">
+    <a class="srv srv--tall" href="services/impression-petit-format.html" style="background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)), url('Images/petitimpression.jpg'); background-size: cover; background-position: center;">
+      <div class="srv__content">
+        <div class="srv__num mono">01</div>
+        <i class="ph-duotone ph-printer srv__icon"></i>
+        <h3>Impression Petit Format</h3>
+        <p>Flyers, cartes, brochures, dossiers, affiches A4 → A2. Offset &amp; numérique.</p>
+        <span class="srv__cta mono">Découvrir <i class="ph ph-arrow-up-right"></i></span>
+        <span class="srv__line"></span>
+      </div>
+    </a>
+
+    <a class="srv srv--wide" href="services/impression-grand-format.html" style="background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)), url('Images/grandimpression.jpg'); background-size: cover; background-position: center;">
+      <div class="srv__content">
+        <div class="srv__num mono">02</div>
+        <i class="ph-duotone ph-frame-corners srv__icon"></i>
+        <h3>Impression Grand Format</h3>
+        <p>Bâches, vinyles, kakémonos, roll-ups. Jusqu'à 5m de laize, encres éco-solvant.</p>
+        <span class="srv__cta mono">Découvrir <i class="ph ph-arrow-up-right"></i></span>
+        <span class="srv__line"></span>
+      </div>
+    </a>
+
+    <a class="srv" href="services/flocage-textile.html" style="background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)), url('Images/tshirtbounehar.jpg'); background-size: cover; background-position: center;">
+      <div class="srv__content">
+        <div class="srv__num mono">03</div>
+        <i class="ph-duotone ph-t-shirt srv__icon"></i>
+        <h3>Flocage Textile</h3>
+        <p>T-shirts, polos, vestes, uniformes. Flex, flock, sublimation, sérigraphie.</p>
+        <span class="srv__cta mono">Découvrir <i class="ph ph-arrow-up-right"></i></span>
+        <span class="srv__line"></span>
+      </div>
+    </a>
+
+    <a class="srv" href="services/conception-maquettes.html" style="background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)), url('Images/maquetteoptic.jpg'); background-size: cover; background-position: center;">
+      <div class="srv__content">
+        <div class="srv__num mono">04</div>
+        <i class="ph-duotone ph-pen-nib srv__icon"></i>
+        <h3>Conception Maquettes</h3>
+        <p>Studio graphique intégré. Identité, logo, mise en page, BAT signé.</p>
+        <span class="srv__cta mono">Découvrir <i class="ph ph-arrow-up-right"></i></span>
+        <span class="srv__line"></span>
+      </div>
+    </a>
+
+    <a class="srv srv--wide" href="services/panneaux-publicitaires.html" style="background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)), url('Images/paneaubounehar.jpg'); background-size: cover; background-position: center;">
+      <div class="srv__content">
+        <div class="srv__num mono">05</div>
+        <i class="ph-duotone ph-billboard srv__icon"></i>
+        <h3>Panneaux Publicitaires</h3>
+        <p>4x3, 8x3, dibond, PVC, plexi. Conception, fabrication, pose certifiée.</p>
+        <span class="srv__cta mono">Découvrir <i class="ph ph-arrow-up-right"></i></span>
+        <span class="srv__line"></span>
+      </div>
+    </a>
+
+    <a class="srv" href="services/enseignes-lumineuses.html" style="background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)), url('Images/panneaulimuneuxbounehar.jpg'); background-size: cover; background-position: center;">
+      <div class="srv__content">
+        <div class="srv__num mono">06</div>
+        <i class="ph-duotone ph-lightbulb-filament srv__icon"></i>
+        <h3>Enseignes Lumineuses</h3>
+        <p>Lettres boîtier rétro-éclairées, néon flex, LED RGB. Étude photométrique.</p>
+        <span class="srv__cta mono">Découvrir <i class="ph ph-arrow-up-right"></i></span>
+        <span class="srv__line"></span>
+      </div>
+    </a>
+
+    <a class="srv" href="services/enseignes-non-lumineuses.html" style="background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)), url('Images/cadres.jpg'); background-size: cover; background-position: center;">
+      <div class="srv__content">
+        <div class="srv__num mono">07</div>
+        <i class="ph-duotone ph-storefront srv__icon"></i>
+        <h3>Enseignes Non Lumineuses</h3>
+        <p>Plaques, lettres découpées, drapeaux, totem. Aluminium, inox, plexi.</p>
+        <span class="srv__cta mono">Découvrir <i class="ph ph-arrow-up-right"></i></span>
+        <span class="srv__line"></span>
+      </div>
+    </a>
+
+    <a class="srv srv--tall" href="services/facade-alucobond.html" style="background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)), url('Images/opticien.jpg'); background-size: cover; background-position: center;">
+      <div class="srv__content">
+        <div class="srv__num mono">08</div>
+        <i class="ph-duotone ph-buildings srv__icon"></i>
+        <h3>Façade Alucobond</h3>
+        <p>Habillage de façade, bardage composite. Pose sur ossature aluminium.</p>
+        <span class="srv__cta mono">Découvrir <i class="ph ph-arrow-up-right"></i></span>
+        <span class="srv__line"></span>
+      </div>
+    </a>
+
+    <a class="srv" href="services/caissons-lumineux.html" style="background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)), url('Images/panneaulimuneuxbounehar.jpg'); background-size: cover; background-position: center;">
+      <div class="srv__content">
+        <div class="srv__num mono">09</div>
+        <i class="ph-duotone ph-cube srv__icon"></i>
+        <h3>Caissons Lumineux</h3>
+        <p>Caissons mono &amp; double face, LED haute densité, films diffusants.</p>
+        <span class="srv__cta mono">Découvrir <i class="ph ph-arrow-up-right"></i></span>
+        <span class="srv__line"></span>
+      </div>
+    </a>
+
+    <a class="srv srv--wide" href="services/cartes-visite-serigraphie.html" style="background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)), url('Images/cartes.jpg'); background-size: cover; background-position: center;">
+      <div class="srv__content">
+        <div class="srv__num mono">10</div>
+        <i class="ph-duotone ph-identification-card srv__icon"></i>
+        <h3>Cartes de visite · Sérigraphie</h3>
+        <p>Dorure à chaud, gaufrage, vernis sélectif, papiers texturés, sérigraphie objet.</p>
+        <span class="srv__cta mono">Découvrir <i class="ph ph-arrow-up-right"></i></span>
+        <span class="srv__line"></span>
+      </div>
+    </a>
+  </div>
+</section>
+
+<!-- =============================================================
+     05 — PORTFOLIO
+============================================================= -->
+<section class="portfolio" id="portfolio" data-screen-label="05 Portfolio">
+  <div class="section-head">
+    <div class="section-eyebrow"><span class="mono">/ 03 — PORTFOLIO</span></div>
+    <h2 class="h2">Travaux récents.</h2>
+    <p class="section-sub">Une sélection de réalisations livrées en 2024–2025 à Béjaïa, Alger et Tizi Ouzou.</p>
+  </div>
+
+  <div class="filterbar" id="filterbar">
+    <button class="chip is-active" data-filter="all">Tous <span class="mono">·14</span></button>
+    <button class="chip" data-filter="enseignes">Enseignes</button>
+    <button class="chip" data-filter="impression">Impression</button>
+    <button class="chip" data-filter="textile">Textile</button>
+    <button class="chip" data-filter="facades">Façades</button>
+  </div>
+
+  <div class="pf-grid" id="pfGrid">
+    <!-- generated by JS for cleanliness -->
+  </div>
+</section>
+
+<!-- =============================================================
+     06 — PROCESS (horizontal scroll pinned)
+============================================================= -->
+<section class="process" id="processus" data-screen-label="06 Process">
+  <div class="section-head process__head">
+    <div class="section-eyebrow"><span class="mono">/ 04 — PROCESSUS</span></div>
+    <h2 class="h2">Du brief à la pose,<br/>en quatre temps.</h2>
+  </div>
+
+  <div class="process__track" id="processTrack">
+    <div class="process__rail">
+
+      <article class="step">
+        <div class="step__num mono">01</div>
+        <i class="ph ph-chat-circle-text step__icon"></i>
+        <h3>Consultation &amp; Brief</h3>
+        <p>Rendez-vous studio ou visite sur site. On écoute, on mesure, on cadre l'objectif, le budget et le délai.</p>
+        <ul>
+          <li>Diagnostic technique</li>
+          <li>Cahier des charges</li>
+          <li>Devis détaillé sous 24h</li>
+        </ul>
+      </article>
+
+      <article class="step">
+        <div class="step__num mono">02</div>
+        <i class="ph ph-pen-nib step__icon"></i>
+        <h3>Conception &amp; Maquette</h3>
+        <p>Notre studio dessine plusieurs pistes. Vous validez la direction, on affine jusqu'au BAT signé.</p>
+        <ul>
+          <li>Direction artistique</li>
+          <li>3 propositions visuelles</li>
+          <li>BAT haute définition</li>
+        </ul>
+      </article>
+
+      <article class="step">
+        <div class="step__num mono">03</div>
+        <i class="ph ph-gear-six step__icon"></i>
+        <h3>Production Premium</h3>
+        <p>Atelier interne : presses numériques, plotter de découpe, soudure, électricité, contrôle qualité.</p>
+        <ul>
+          <li>Encres &amp; supports certifiés</li>
+          <li>Contrôle qualité 4 paliers</li>
+          <li>Photos d'avancement</li>
+        </ul>
+      </article>
+
+      <article class="step">
+        <div class="step__num mono">04</div>
+        <i class="ph ph-truck step__icon"></i>
+        <h3>Livraison &amp; Installation</h3>
+        <p>Équipe de pose certifiée, nacelle, sécurisation. Réception signée, garantie 2 ans sur les enseignes.</p>
+        <ul>
+          <li>Pose certifiée</li>
+          <li>Réception &amp; PV</li>
+          <li>SAV 2 ans</li>
+        </ul>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- =============================================================
+     07 — CLIENTS
+============================================================= -->
+<section class="clients" data-screen-label="07 Clients">
+  <div class="section-head section-head--center">
+    <div class="section-eyebrow"><span class="mono">/ 05 — ILS NOUS FONT CONFIANCE</span></div>
+    <h2 class="h2">Marques, commerces, institutions.</h2>
+  </div>
+
+  <!-- Marquee row -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee__track">
+      <!-- duplicated twice for seamless loop -->
+      <span class="logo">CONDOR</span><span class="logo logo--alt">Sétif&nbsp;Mall</span>
+      <span class="logo">ATLAS</span><span class="logo logo--alt">NumiPharm</span>
+      <span class="logo">BENAMOR</span><span class="logo logo--alt">Sahara&nbsp;Bank</span>
+      <span class="logo">CEVITAL</span><span class="logo logo--alt">Riadh&nbsp;Hôtel</span>
+      <span class="logo">SONELGAZ</span><span class="logo logo--alt">El&nbsp;Khabar</span>
+      <span class="logo">CONDOR</span><span class="logo logo--alt">Sétif&nbsp;Mall</span>
+      <span class="logo">ATLAS</span><span class="logo logo--alt">NumiPharm</span>
+      <span class="logo">BENAMOR</span><span class="logo logo--alt">Sahara&nbsp;Bank</span>
+      <span class="logo">CEVITAL</span><span class="logo logo--alt">Riadh&nbsp;Hôtel</span>
+      <span class="logo">SONELGAZ</span><span class="logo logo--alt">El&nbsp;Khabar</span>
+    </div>
+  </div>
+
+  <!-- Testimonials -->
+  <div class="testi">
+    <div class="swiper testi__swiper">
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide">
+          <article class="ti">
+            <div class="ti__stars" aria-label="5 sur 5">
+              <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+            </div>
+            <blockquote>« Une enseigne lumineuse posée en un week-end, sans interrompre le commerce. Finition impeccable, équipe pro. »</blockquote>
+            <footer><strong>Karim B.</strong><span>Gérant, Optique Centrale — Sidi Aïch</span></footer>
+          </article>
+        </div>
+
+        <div class="swiper-slide">
+          <article class="ti">
+            <div class="ti__stars" aria-label="5 sur 5">
+              <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+            </div>
+            <blockquote>« On leur a confié l'habillage complet de notre showroom : façade Alucobond, totem, signalétique intérieure. Résultat au-delà des attentes. »</blockquote>
+            <footer><strong>Sonia M.</strong><span>Directrice marketing, Atlas Auto</span></footer>
+          </article>
+        </div>
+
+        <div class="swiper-slide">
+          <article class="ti">
+            <div class="ti__stars" aria-label="5 sur 5">
+              <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+            </div>
+            <blockquote>« 1 200 t-shirts floqués pour notre événement, livrés en 9 jours, qualité constante du premier au dernier. »</blockquote>
+            <footer><strong>Yacine T.</strong><span>Resp. communication, JSM Béjaïa</span></footer>
+          </article>
+        </div>
+
+        <div class="swiper-slide">
+          <article class="ti">
+            <div class="ti__stars" aria-label="5 sur 5">
+              <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+            </div>
+            <blockquote>« Un studio qui comprend la marque, pas juste un imprimeur. Le brief a été traduit avec une vraie sensibilité graphique. »</blockquote>
+            <footer><strong>Lina H.</strong><span>Brand manager, NumiPharm</span></footer>
+          </article>
+        </div>
+
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+</section>
+
+<!-- =============================================================
+     08 — STATS BANNER
+============================================================= -->
+<section class="banner" data-screen-label="08 Stats Banner">
+  <div class="banner__bg" aria-hidden="true"></div>
+  <div class="banner__inner">
+    <div class="banner__nums">
+      <div class="bn"><div class="bn__n" data-count="100" data-suffix="+">0</div><div class="bn__l">Projets</div></div>
+      <div class="bn"><div class="bn__n" data-count="6"  data-suffix="+">0</div><div class="bn__l">Années d'expérience</div></div>
+      <div class="bn"><div class="bn__n" data-count="100" data-suffix="%">0</div><div class="bn__l">Satisfaction</div></div>
+      <div class="bn"><div class="bn__n" data-count="24"  data-suffix="h">0</div><div class="bn__l">Délai devis</div></div>
+    </div>
+    <a href="#contact" class="btn btn--accent btn--lg banner__cta">
+      <span>Demandez votre devis gratuit</span>
+      <i class="ph ph-arrow-right"></i>
+    </a>
+  </div>
+</section>
+
+<!-- =============================================================
+     09 — CONTACT
+============================================================= -->
+<section class="contact" id="contact" data-screen-label="09 Contact">
+  <div class="contact__grid">
+    <div class="contact__left">
+      <div class="section-eyebrow"><span class="mono">/ 06 — CONTACT</span></div>
+      <h2 class="h2">Parlons de<br/>votre projet.</h2>
+      <p class="muted">Réponse sous 24h ouvrées. Devis détaillé gratuit, sans engagement.</p>
+
+      <form class="form" action="https://formspree.io/f/xxxxx" method="POST" id="contactForm">
+        <div class="field">
+          <label for="f-name">Nom complet</label>
+          <input id="f-name" type="text" name="name" required placeholder="Ex. Karim Benali">
+        </div>
+        <div class="row">
+          <div class="field">
+            <label for="f-phone">Téléphone</label>
+            <input id="f-phone" type="tel" name="phone" required placeholder="+213 ...">
+          </div>
+          <div class="field">
+            <label for="f-email">Email</label>
+            <input id="f-email" type="email" name="email" placeholder="vous@exemple.com">
+          </div>
+        </div>
+        <div class="field">
+          <label for="f-type">Type de projet</label>
+          <select id="f-type" name="type" required>
+            <option value="">Sélectionner…</option>
+            <option>Impression petit format</option>
+            <option>Impression grand format</option>
+            <option>Flocage textile</option>
+            <option>Enseigne lumineuse</option>
+            <option>Enseigne non lumineuse</option>
+            <option>Façade Alucobond</option>
+            <option>Caisson lumineux</option>
+            <option>Panneau publicitaire</option>
+            <option>Identité visuelle / Maquette</option>
+            <option>Autre</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="f-msg">Message</label>
+          <textarea id="f-msg" name="message" rows="4" placeholder="Décrivez brièvement votre projet, dimensions, délais…"></textarea>
+        </div>
+        <button type="submit" class="btn btn--accent btn--lg">
+          <span>Envoyer la demande</span>
+          <i class="ph ph-paper-plane-tilt"></i>
+        </button>
+      </form>
+    </div>
+
+    <aside class="contact__right">
+      <div class="info-card">
+        <div class="info">
+          <i class="ph ph-map-pin"></i>
+          <div>
+            <strong>Atelier &amp; Studio</strong>
+            <span>Centre-ville, Sidi Aïch 06030<br/>Béjaïa, Algérie</span>
+          </div>
+        </div>
+        <div class="info">
+          <i class="ph ph-phone"></i>
+          <div>
+            <strong>Téléphone</strong>
+            <a href="tel:+213555000000">+213 555 00 00 00</a>
+          </div>
+        </div>
+        <div class="info">
+          <i class="ph ph-envelope-simple"></i>
+          <div>
+            <strong>Email</strong>
+            <a href="/cdn-cgi/l/email-protection#8fece0e1fbeeecfbcfe6e2fffde6e2e0a1ebf5"><span class="__cf_email__" data-cfemail="1774787963767463577e7a67657e7a7839736d">[email&#160;protected]</span></a>
+          </div>
+        </div>
+        <div class="info">
+          <i class="ph ph-clock"></i>
+          <div>
+            <strong>Horaires</strong>
+            <span>Dim–Jeu · 8h30 → 18h00<br/>Sam · 9h00 → 14h00</span>
+          </div>
+        </div>
+
+        <a class="wa-btn" href="https://wa.me/213555000000" target="_blank" rel="noopener">
+          <i class="ph-fill ph-whatsapp-logo"></i>
+          <span>Discuter sur WhatsApp</span>
+        </a>
+      </div>
+
+      <div class="mapwrap">
+        <iframe
+          title="IMPRIMO sur Google Maps — Sétif"
+          src="https://www.google.com/maps?q=Sidi+Aich+Bejaia+Algeria&output=embed"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </aside>
+  </div>
+</section>
+
+</main>
+
+<!-- =============================================================
+     10 — FOOTER
+============================================================= -->
+<footer class="footer" data-screen-label="10 Footer">
+  <div class="footer__top">
+    <div class="footer__brand">
+      <a href="#top" class="nav__logo">IMPRIMO<span class="nav__dot"></span></a>
+      <p>Votre vision. Matérialisée.<br/><span class="mono">Sidi Aïch · Béjaïa · Algérie</span></p>
+    </div>
+    <div class="footer__cols">
+      <div>
+        <h4>Navigation</h4>
+        <a href="#services">Services</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#processus">Processus</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div>
+        <h4>Légal</h4>
+        <a href="#">Mentions légales</a>
+        <a href="#">CGV</a>
+        <a href="#">Confidentialité</a>
+      </div>
+      <div>
+        <h4>Suivez-nous</h4>
+        <div class="socials">
+          <a href="#" aria-label="Facebook"><i class="ph-fill ph-facebook-logo"></i></a>
+          <a href="#" aria-label="Instagram"><i class="ph-fill ph-instagram-logo"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="ph-fill ph-linkedin-logo"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <span>© 2025 IMPRIMO. Tous droits réservés.</span>
+    <span class="mono">Conçu &amp; développé à Sidi Aïch · Béjaïa</span>
+  </div>
+</footer>
+
+<!-- Floating WhatsApp -->
+<a href="https://wa.me/213555000000" class="wa-float" target="_blank" rel="noopener" aria-label="Contact WhatsApp">
+  <i class="ph-fill ph-whatsapp-logo"></i>
+</a>
+
+<!-- Libs -->
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/countup.js@2.8.0/dist/countUp.umd.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+
+<script src="app.js"></script>
+</body>
+</html>
