@@ -16,20 +16,20 @@ const PREFERS_REDUCED = window.matchMedia('(prefers-reduced-motion: reduce)').ma
 
 /* ---------- 0. Portfolio data (rendered to DOM) ---------- */
 const PORTFOLIO = [
-  { id:1,  cat:'enseignes',  title:"Enseigne lumineuse — Optique Centrale",      seed:'panneaulimuneuxbounehar',  size:'tall' },
-  { id:2,  cat:'impression', title:"Bâche événement — Salon Auto Sétif",         seed:'grandimpressionwoemnsday',  size:'wide' },
-  { id:3,  cat:'textile',    title:"Flocage staff — FC Sétif",                   seed:'tshirtbounehar',  size:'sq'   },
-  { id:4,  cat:'facades',    title:"Façade Alucobond — Showroom Atlas",          seed:'opticien',  size:'sq'   },
-  { id:5,  cat:'enseignes',  title:"Caisson lumineux — Pharmacie NumiPharm",     seed:'panneaulimuneuxbounehar',  size:'sq'   },
-  { id:6,  cat:'impression', title:"Roll-ups — Conférence BENAMOR",              seed:'grandimpression',  size:'tall' },
-  { id:7,  cat:'textile',    title:"Uniformes — Riadh Hôtel",                    seed:'combinaisontwawla',  size:'wide' },
-  { id:8,  cat:'facades',    title:"Habillage Composite — Sahara Bank",          seed:'opticien',  size:'sq'   },
-  { id:9,  cat:'enseignes',  title:"Lettres boîtier — Café Numidia",             seed:'cadres',  size:'sq'   },
-  { id:10, cat:'impression', title:"Catalogue 96p — Cevital Distribution",       seed:'cal', size:'sq'   },
-  { id:11, cat:'textile',    title:"Sérigraphie sacs — Sétif Mall",              seed:'tshirtcosmetique', size:'tall' },
-  { id:12, cat:'facades',    title:"Totem signalétique — Hôpital Sétif",         seed:'paneaubounehar', size:'wide' },
-  { id:13, cat:'enseignes',  title:"Néon flex — Bar à café Numidia",             seed:'panneaulimuneuxbounehar', size:'sq' },
-  { id:14, cat:'impression', title:"Affichage 4×3 — Campagne El Khabar",         seed:'grandimpressionassegassameguaz', size:'sq' },
+  { id:1,  cat:'textile',    title:"Combinaison brodée — Hôtel Bounehar",        seed:'combinaisonamazigh',             size:'tall' },
+  { id:2,  cat:'textile',    title:"T-Shirt flocage — Bounehar",                 seed:'tshirtbounehar2',                size:'wide' },
+  { id:3,  cat:'emballage',  title:"Emballage Amazigh — Édition spéciale",       seed:'emballageamazigh',               size:'sq'   },
+  { id:4,  cat:'emballage',  title:"Emballage — Hija Phone",                     seed:'emballagehijophone',             size:'sq'   },
+  { id:5,  cat:'textile',    title:"T-Shirt Tachwayt — Collection Kabyle",       seed:'tshirttachwayt',                 size:'sq'   },
+  { id:6,  cat:'impression', title:"Flyers — Pharmacie Apoteka",                 seed:'petiteimpressionpharmacie',      size:'tall' },
+  { id:7,  cat:'textile',    title:"Uniformes — Touaoula Patisserie",            seed:'combinaisontwawla2',             size:'wide' },
+  { id:8,  cat:'emballage',  title:"Emballage — Miel Akfadou",                   seed:'mielboites',                    size:'sq'   },
+  { id:9,  cat:'textile',    title:"T-Shirt cosmetique — Beauticia",             seed:'tshirtcosmetique',               size:'sq'   },
+  { id:10, cat:'emballage',  title:"Emballage — Twawla Béjaïa",                  seed:'embalagetwawla',                 size:'sq'   },
+  { id:11, cat:'textile',    title:"Combinaison — Twawla Béjaïa",                seed:'combinaisontwawla3',             size:'tall' },
+  { id:12, cat:'emballage',  title:"Emballage téléphonie — Said 34 Phone",       seed:'emballagesaidphone',             size:'wide' },
+  { id:13, cat:'textile',    title:"Combinaison Amazigh — Série 3",              seed:'combinaisonamazigh3',            size:'sq'   },
+  { id:14, cat:'impression', title:"Flyers enfants — Impression locale",          seed:'petitimpressionenfants',         size:'sq'   },
 ];
 
 const SIZE_TO_SPAN = { sq:{c:4,r:30}, wide:{c:8,r:30}, tall:{c:4,r:46} };
@@ -104,6 +104,7 @@ if(!PREFERS_REDUCED){
   reveal('.srv', { stagger:.06 });
   reveal('.pf-card', { stagger:.04 });
   reveal('.info-card, .mapwrap, .form');
+  reveal('.ct-card', { stagger: 0.12 });
   reveal('.bn');
 
   /* Process horizontal pin (desktop only) */
@@ -177,12 +178,3 @@ new Swiper('.testi__swiper', {
 /* ---------- 6. GLightbox ---------- */
 GLightbox({ selector:'.glightbox', loop:true });
 
-/* ---------- 7. Form (Formspree placeholder) ---------- */
-document.getElementById('contactForm')?.addEventListener('submit', e => {
-  // Real handler: Formspree POST. For preview, prevent + alert.
-  if(e.currentTarget.action.includes('xxxxx')){
-    e.preventDefault();
-    alert('Merci ! Votre demande a bien été enregistrée. Nous revenons vers vous sous 24h.');
-    e.currentTarget.reset();
-  }
-});
