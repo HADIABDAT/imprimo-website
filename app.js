@@ -30,6 +30,12 @@ const PORTFOLIO = [
   { id:12, cat:'emballage',  title:"Emballage téléphonie — Said 34 Phone",       seed:'emballagesaidphone',             size:'wide' },
   { id:13, cat:'textile',    title:"Combinaison Amazigh — Série 3",              seed:'combinaisonamazigh3',            size:'sq'   },
   { id:14, cat:'impression', title:"Flyers enfants — Impression locale",          seed:'petitimpressionenfants',         size:'sq'   },
+  { id:15, cat:'impression', title:"Cartes de visite — Maxtor",                    seed:'cartemaxtor4',                   size:'tall' },
+  { id:16, cat:'impression', title:"Cartes de visite — finition premium",          seed:'cartemaxtor3',                   size:'sq'   },
+  { id:17, cat:'impression', title:"Cartes — Maison Apiculture",                   seed:'carteapiculture',                size:'sq'   },
+  { id:18, cat:'impression', title:"Cartes — Bougie Phone",                        seed:'cartebougiephone',               size:'sq'   },
+  { id:19, cat:'impression', title:"Cartes — Service Thermique Pro",               seed:'carteservicethermiquepro',       size:'wide' },
+  { id:20, cat:'impression', title:"Cartes — série Maxtor",                        seed:'cartemaxtor5',                   size:'sq'   },
 ];
 
 const SIZE_TO_SPAN = { sq:{c:4,r:30}, wide:{c:8,r:30}, tall:{c:4,r:46} };

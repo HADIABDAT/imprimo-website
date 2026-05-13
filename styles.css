@@ -116,8 +116,17 @@ button{font:inherit;cursor:pointer;background:none;border:0;color:inherit}
   font-weight:700;
   font-size:22px;
   letter-spacing:-.02em;
-  display:inline-flex;align-items:baseline;gap:3px;
+  display:inline-flex;align-items:center;gap:3px;
+  line-height:0;
 }
+.nav__logo-img{
+  height:clamp(28px,3.6vw,40px);
+  width:auto;
+  max-width:min(200px,42vw);
+  object-fit:contain;
+  display:block;
+}
+.footer .nav__logo-img{max-width:220px;height:clamp(32px,4vw,44px)}
 .nav__dot{
   width:8px;height:8px;border-radius:50%;
   background:var(--accent-1);
